@@ -1,0 +1,28 @@
+plugins {
+    id 'java-gradle-plugin'
+    id 'maven-publish'
+}
+
+group = 'net.edu.cinercia'
+version = '1.1.0'
+
+java {
+    withSourcesJar()
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.ow2.asm:asm-tree:9.7'
+}
+
+gradlePlugin {
+    plugins {
+        cinercia {
+            id = 'net.edu.cinercia.plugin'
+            implementationClass = 'net.edu.cinercia.plugin.CinerciaPlugin'
+        }
+    }
+}
