@@ -6,9 +6,9 @@ public final class PluginProperties {
     public static final String PLATFORM_NAME = "cinercia.platform.name";
 
     // Project
-    public static final String ONLY_CLIENT = "Lnet/edu/cinercia/annotations/OnlyInClient;";
-    public static final String ONLY_SERVER = "Lnet/edu/cinercia/annotations/OnlyInServer;";
-    public static final String DELEGATED = "Lnet/edu/cinercia/annotations/DelegatedByPlatform;";
+    public static final String ONLY_CLIENT = "Lnet/edu/cinercia/plugin/annotations/OnlyInClient;";
+    public static final String ONLY_SERVER = "Lnet/edu/cinercia/plugin/annotations/OnlyInServer;";
+    public static final String DELEGATED = "Lnet/edu/cinercia/plugin/annotations/DelegatedByPlatform;";
 
     // Fabric
     public static final String CLIENT = "CLIENT";
